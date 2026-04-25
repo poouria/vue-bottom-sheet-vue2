@@ -1,18 +1,20 @@
 {
-  "name": "@webzlodimir/vue-bottom-sheet-vue2",
-  "version": "0.0.9",
+  "name": "@poouria/vue-bottom-sheet-vue2",
+  "version": "0.1.4",
   "description": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webzlodimir/vue-bottom-sheet-vue2.git"
   },
+
   "scripts": {
-    "serve": "vue-cli-service serve dev/serve.js",
-    "build": "rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
-    "size": "size-limit"
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve dev/serve.js ",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:ssr": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:es": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:unpkg": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "size": "size-limit",
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider && rimraf dist && cross-env NODE_ENV=production rollup --config build/rollup.config.js && npm publish --registry=https://nexus.topops.ir/repository/npm-hosted"
   },
   "keywords": [
     "vue",

@@ -14,17 +14,15 @@
         maxWidth: maxWidthString,
         maxHeight: maxHeightString,
         transform: translateValueString,
-        height: sheetHeightString
       }"
         :class="sheetContentClasses"
     >
       <header ref="bottomSheetHeader" class="bottom-sheet__header">
         <div class="bottom-sheet__draggable-area" ref="bottomSheetDraggableArea">
           <slot name="drag">
-            <div class="bottom-sheet__draggable-thumb" :style="{backgroundColor: dragColor}"></div>
+            <slot name="header" />
           </slot>
         </div>
-        <slot name="header" />
       </header>
       <main ref="bottomSheetMain" class="bottom-sheet__main" :style="{overflowY: showSheet ? 'auto' : 'hidden'}">
         <slot />
@@ -101,6 +99,7 @@ export default {
           (this.$refs.bottomSheetHeader.offsetHeight +
           this.$refs.bottomSheetMain.offsetHeight +
           this.$refs.bottomSheetFooter.offsetHeight)
+
     },
     clickOnOverlayHandler() {
       if (this.overlayClickClose) {
@@ -334,7 +333,6 @@ export default {
     display: flex;
     flex-direction: column;
     border-radius: 16px 16px 0 0;
-    background: #ffffff;
     overflow-y: hidden;
     box-sizing: border-box;
     pointer-events: all;
@@ -352,22 +350,13 @@ export default {
   &__draggable-area {
     width: 100%;
     margin: auto;
-    padding: 16px;
     cursor: grab;
   }
 
-  &__draggable-thumb {
-    width: 40px;
-    height: 4px;
-    background: #333333;
-    border-radius: 8px;
-    margin: 0 auto;
-  }
 
   &__main {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     touch-action: auto !important;

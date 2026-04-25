@@ -122,6 +122,7 @@
         Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
         quos velit veritatis voluptatem?
         </p>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
           Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
@@ -132,41 +133,7 @@
           Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
           quos velit veritatis voluptatem?
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque sed tempore ullam.
-          Accusamus animi at autem beatae est, hic inventore iste minima, non quibusdam quisquam
-          quos velit veritatis voluptatem?
-        </p>
+
         <button type="button" class="btn btn-danger" @click="close">Close</button>
       </div>
     </vue-bottom-sheet-vue2>
